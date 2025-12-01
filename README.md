@@ -1,24 +1,23 @@
-# Zingg Labeller Design Assignment
+# Zingg Labeller - Design Assignment
 
-Design critique for Labeller.java from zingg codebase.
+This repo contains my analysis of Labeller.java from zingg project.
 
-## Folder structure
+## whats inside
 
-- original-code/ - contains the original Labeller.java
-- refactored/ - my suggested improvements
-- design-critique.md - analysis and suggestions
+- original-code/ - the original file i analyzed
+- refactored/ - code changes i am suggesting  
+- design-critique.md - detailed writeup
 
-## Main issues found
+## issues i found
 
-1. Class doing too many things
-2. Hardcoded System.in makes testing hard
-3. Exception handling needs improvement
-4. Magic numbers used for options
-5. Code duplication across classes
+1. too many things happening in single class
+2. System.in hardcoded so cant test properly
+3. exception handling is not proper
+4. using numbers directly instead of constants
+5. same code written in multiple places
 
-## Changes suggested
+## what i suggest
 
-Split into smaller classes with single responsibility and use interfaces for testability.
+basically split into smaller classes and use interfaces so we can test easily
 
-See design-critique.md for details.
-
+check design-critique.md for full details
